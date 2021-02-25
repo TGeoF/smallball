@@ -6,7 +6,7 @@ func main() {
 	l := loadLeague()
 	r := Rules{}
 	p := PaHandler{}
-	g := Game{Home: l.teams[0], Away: l.teams[1]}
+	g := Game{Home: l.teams["oak"], Away: l.teams["nym"]}
 
 	r.load()
 	g.init()
